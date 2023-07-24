@@ -1,0 +1,47 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AppConfigLabels": "NLPService,local",
+    "ServiceBusConnectionString": "Endpoint=sb://ine1dv-cosb-001.servicebus.windows.net/;SharedAccessKeyName=HPSAppsSharedAccessKey;SharedAccessKey=yTAqaHSEx8HRpOT5ZMpby7NILH+6Z+TTqkWW+sFt0Gs=",
+    "KeyVaultUrl": "https://ine1dv-hps-kyvt-001.vault.azure.net/",
+    "LoggingConfiguration__LogProvider": "Serilog",
+    "LoggingConfiguration__LogRules__0__Logger": "Evolent.*",
+    "LoggingConfiguration__LogRules__1__Logger": "Microsoft.*",
+    "PatientNoteStatusQueue": "local-nlp-patientnotestatus",
+    "PatientNotesQueue": "local-nlp-patientnote",
+    //"AttachmentServiceFileExtensions": [ ".PDF" ],
+    "UseApim": false,
+    "CosmosDbSettings__ConnectionString": "AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+    "CosmosDbSettings__DatabaseName": "NLPService",
+    "CosmosDbSettings__Containers__0__Name": "PatientNoteStatus",
+    "CosmosDbSettings__Containers__0__PartitionKey__0": "/PatientId",
+    "CosmosDbSettings__Containers__0__PartitionKey__1": "/NoteId"
+  }
+  //"CosmosDbSettings": {
+  //  "ConnectionString": "AccountEndpoint=https://localhost:8081/;AccountKey=C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==",
+  //  "DatabaseName": "NLPService",
+  //  "Containers": [
+  //    {
+  //      "Name": "PatientNoteStatus",
+  //      "PartitionKey": [ "/PatientId", "/NoteId" ]
+  //    }
+  //  ]
+  //},
+  //"BlobStorageSettings": {
+  //  "AccountName": "ine1dvapimstr001",
+  //  "ContainerName": "carepro",
+  //  "FileAndPath": ""
+  //},
+  //"APIMSubscriptionSettings": {
+  //  "Key": "Ocp-Apim-Subscription-Key",
+  //  "Value": "13a5839318834e969153c7807a869730"
+  //},
+  //"UrlSettings": {
+  //  "BaseNLPOutboundAPIMUrl": "https://ag-uat.myidentifi.com/kaid-out/",
+  //  "BaseNLPInboundAPIMUrl": "https://ag-uat.myidentifi.com/kaid-in/",
+  //  "BaseSearchUrl": "https://api.kaidhealth.care/api/v1/",
+  //  "BaseIngestUrl": "https://redox.kaidhealth.care/"
+  //}
+}
